@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fundosamurai_0: 2403439667311883616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

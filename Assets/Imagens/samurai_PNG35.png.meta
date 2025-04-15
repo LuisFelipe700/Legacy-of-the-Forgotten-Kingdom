@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      samurai_PNG35_0: 2776776613858036536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
