@@ -810,7 +810,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 878268213}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Guerreiro
+        m_MethodName: Samurai
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

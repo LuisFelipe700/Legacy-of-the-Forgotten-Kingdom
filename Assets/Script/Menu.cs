@@ -36,7 +36,7 @@ public void Jogar()
     {
         SceneManager.LoadScene("Druida");
     }
-    public void Guerreiro()
+    public void Samurai()
     {
         SceneManager.LoadScene("Samurai");
     }
@@ -52,10 +52,15 @@ public void Jogar()
     {
         SceneManager.LoadScene("SelecionaPersonagens");
     }
-    public void ProximaFase()
+    public void IrahBatalharS()
     {
-        SceneManager.LoadScene("ProximaFase");
+        SceneManager.LoadScene("IrahBatalharS");
     }
+    public void EscolhaCaminhoS()
+    {
+        SceneManager.LoadScene("EscolhaCaminhoS");
+    }
+
     public void BatalhaSamuraiOrc()
     {
         SceneManager.LoadScene("BatalhaSamuraiOrc");
