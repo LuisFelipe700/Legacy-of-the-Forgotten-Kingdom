@@ -180,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1330687343627879636, guid: 4c10ba35632662f4b96549f971d107b8, type: 3}
+  m_Sprite: {fileID: -6506678990758877115, guid: 57ebb1a1946ba594482a95eb77a20f53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -199,13 +199,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50124795}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0402, y: 0.0796, z: 0}
-  m_LocalScale: {x: 5.5322347, y: 4.1815677, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0009135162, w: 0.9999996}
+  m_LocalPosition: {x: -0.0001, y: -0.0026, z: 0}
+  m_LocalScale: {x: 1.1648316, y: 0.98226565, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.105}
 --- !u!1 &323907849
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +342,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323907849}
   m_CullTransparentMesh: 1
+--- !u!1 &376495134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376495136}
+  - component: {fileID: 376495135}
+  m_Layer: 0
+  m_Name: Escreve Texto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &376495135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376495134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e2e38a58b4c2745bc1362b7bd2c555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 2034528570}
+  mensagemCompleta: 'Estao vindo orc''s, sinto pena deles! Mais cabecas para minha
+    colecao.
+
+'
+  velocidadeDigitacao: 0.05
+--- !u!4 &376495136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376495134}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.717514, y: 0.17011172, z: 0.018862646}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &432057681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1260,7 @@ GameObject:
   - component: {fileID: 2034528571}
   - component: {fileID: 2034528570}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: texttt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1346,3 +1396,4 @@ SceneRoots:
   - {fileID: 1119565779}
   - {fileID: 1728945403}
   - {fileID: 742583369}
+  - {fileID: 376495136}

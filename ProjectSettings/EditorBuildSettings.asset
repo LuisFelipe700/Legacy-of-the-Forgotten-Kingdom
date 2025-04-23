@@ -35,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Samurai/IrahBatalharS.unity
     guid: deb1caa9ae580d041b6c24d00e5176c0
+  - enabled: 1
+    path: Assets/Scenes/Samurai/PROIBIDOentra.unity
+    guid: 705c038cac45fd94e84c417600339194
+  - enabled: 1
+    path: Assets/Scenes/Samurai/BatalhaSamuraiSoldado.unity
+    guid: c072e52885b8fb342823848a5aa6be28
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

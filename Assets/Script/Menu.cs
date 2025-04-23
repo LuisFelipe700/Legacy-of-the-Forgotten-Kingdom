@@ -60,13 +60,19 @@ public void Jogar()
     {
         SceneManager.LoadScene("EscolhaCaminhoS");
     }
-
+    public void HistoriaCacada()
+    {
+        SceneManager.LoadScene("HistoriaCacada");
+    }
     public void BatalhaSamuraiOrc()
     {
         SceneManager.LoadScene("BatalhaSamuraiOrc");
     }
-    
-    
+    public void PROIBIDOentra()
+    {
+        SceneManager.LoadScene("PROIBIDOentra");
+    }
+
 
     private void OnMouseDown()
     {
