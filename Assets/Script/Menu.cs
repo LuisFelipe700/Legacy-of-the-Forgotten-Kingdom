@@ -52,25 +52,33 @@ public void Jogar()
     {
         SceneManager.LoadScene("SelecionaPersonagens");
     }
-    public void IrahBatalharS()
+    public void IrahBatalharS1()
     {
-        SceneManager.LoadScene("IrahBatalharS");
+        SceneManager.LoadScene("IrahBatalharS1");
     }
-    public void EscolhaCaminhoS()
+    public void EscolhaCaminhoS1()
     {
-        SceneManager.LoadScene("EscolhaCaminhoS");
+        SceneManager.LoadScene("EscolhaCaminhoS1");
     }
-    public void HistoriaCacada()
+    public void HistoriaCacada1()
     {
-        SceneManager.LoadScene("HistoriaCacada");
+        SceneManager.LoadScene("HistoriaCacada1");
     }
-    public void BatalhaSamuraiOrc()
+    public void BatalhaSamuraiOrc1()
     {
-        SceneManager.LoadScene("BatalhaSamuraiOrc");
+        SceneManager.LoadScene("BatalhaSamuraiOrc1");
     }
-    public void PROIBIDOentra()
+    public void PROIBIDOentra1()
     {
-        SceneManager.LoadScene("PROIBIDOentra");
+        SceneManager.LoadScene("PROIBIDOentra1");
+    }
+    public void BatalhaSamuraiSoldado1()
+    {
+        SceneManager.LoadScene("BatalhaSamuraiSoldado1");
+    }
+    public void EscolhaArmadura()
+    {
+        SceneManager.LoadScene("EscolhaArmadura");
     }
 
 
