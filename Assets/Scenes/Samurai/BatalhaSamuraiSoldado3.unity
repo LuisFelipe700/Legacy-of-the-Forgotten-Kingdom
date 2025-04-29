@@ -527,6 +527,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170726680}
   m_CullTransparentMesh: 1
+--- !u!1 &215824318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215824320}
+  - component: {fileID: 215824319}
+  m_Layer: 0
+  m_Name: DiretorBatalha
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &215824319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215824318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed92711b083d02e49a75801cf708c076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  inimigo: {fileID: 0}
+  vidaPlayer: {fileID: 0}
+  vidaInimigo: {fileID: 0}
+  nomePlayer: {fileID: 0}
+  nomeInimigo: {fileID: 0}
+  informativo: {fileID: 0}
+--- !u!4 &215824320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215824318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3491, y: 1827, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &413148701
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +909,6 @@ GameObject:
   m_Component:
   - component: {fileID: 858035428}
   - component: {fileID: 858035427}
-  - component: {fileID: 858035429}
   m_Layer: 0
   m_Name: Soldado
   m_TagString: Untagged
@@ -936,26 +986,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &858035429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858035426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44586fea7e8b3b54fb4ee4ace5ef2175, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nomePersonagem: Isaias
-  vida: 100
-  ataque: 70
-  defesa: 30
-  especial: 50
-  estahVivo: 1
-  dB: {fileID: 0}
-  spriteDerrota: {fileID: 0}
 --- !u!1 &953799032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +1048,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: -5307416585742536489, guid: 3ccf88bdc1a05e447b6e7f8c34731124, type: 3}
+  m_Sprite: {fileID: -8445281212299524100, guid: c6cb9cbe23e73fe4cb6cc0858addab1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1038,8 +1068,8 @@ Transform:
   m_GameObject: {fileID: 953799032}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.02, y: -1.03, z: 0}
-  m_LocalScale: {x: 1.2694852, y: 1.2471045, z: 1}
+  m_LocalPosition: {x: 5.1709, y: -1.0416, z: 0}
+  m_LocalScale: {x: 0.94467723, y: 1.0990295, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1056,11 +1086,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44586fea7e8b3b54fb4ee4ace5ef2175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomePersonagem: alfredo
-  vida: 100
-  ataque: 50
-  defesa: 50
-  especial: 80
+  nomePersonagem: 
+  vida: 0
+  ataque: 0
+  defesa: 0
+  especial: 0
   estahVivo: 1
   dB: {fileID: 0}
   spriteDerrota: {fileID: 0}
@@ -1284,57 +1314,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0155, y: -0.0565, z: 0}
   m_LocalScale: {x: 3.7847943, y: 2.8393574, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1638790766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1638790768}
-  - component: {fileID: 1638790767}
-  m_Layer: 0
-  m_Name: DiretorBatalha
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1638790767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638790766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed92711b083d02e49a75801cf708c076, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 953799035}
-  inimigo: {fileID: 858035429}
-  vidaPlayer: {fileID: 1703183708}
-  vidaInimigo: {fileID: 85713392}
-  nomePlayer: {fileID: 1922079856}
-  nomeInimigo: {fileID: 1941941490}
-  informativo: {fileID: 1931374289}
---- !u!4 &1638790768
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638790766}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3491, y: 1827, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1618,7 +1597,7 @@ GameObject:
   - component: {fileID: 1922079857}
   - component: {fileID: 1922079856}
   m_Layer: 5
-  m_Name: NomeSamurai
+  m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2112,4 +2091,4 @@ SceneRoots:
   - {fileID: 953799034}
   - {fileID: 2062391316}
   - {fileID: 858035428}
-  - {fileID: 1638790768}
+  - {fileID: 215824320}

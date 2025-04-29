@@ -636,7 +636,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 753045463}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: PROIBIDOentra
+        m_MethodName: PROIBIDOentra1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1670,7 +1670,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1950343541}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: IrahBatalharS
+        m_MethodName: IrahBatalharS1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

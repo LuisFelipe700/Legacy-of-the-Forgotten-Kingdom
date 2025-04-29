@@ -80,8 +80,54 @@ public void Jogar()
     {
         SceneManager.LoadScene("EscolhaArmadura");
     }
-
-
+    public void HistoriaCacada2()
+    {
+        SceneManager.LoadScene("HistoriaCacada2");
+    }
+    public void EscolhaCaminhoS2()
+    {
+        SceneManager.LoadScene("EscolhaCaminhoS2");
+    }
+    public void IrahBatalharS2()
+    {
+        SceneManager.LoadScene("IrahBatalharS2");
+    }
+    public void PROIBIDOentra2()
+    {
+        SceneManager.LoadScene("PROIBIDOentra2");
+    }
+    public void BatalhaSamuraiOrc2()
+    {
+        SceneManager.LoadScene("BatalhaSamuraiOrc2");
+    }
+    public void BatalhaSamuraiSoldado2()
+    {
+        SceneManager.LoadScene("BatalhaSamuraiSoldado2");
+    }
+    public void HistoriaCacada3()
+    {
+        SceneManager.LoadScene("HistoriaCacada3");
+    }
+    public void EscolhaCaminhoS3()
+    {
+        SceneManager.LoadScene("EscolhaCaminhoS3");
+    }
+    public void IrahBatalharS3()
+    {
+        SceneManager.LoadScene("IrahBatalharS3");
+    }
+    public void PROIBIDOentra3()
+    {
+        SceneManager.LoadScene("PROIBIDOentra3");
+    }
+    public void BatalhaSamuraiOrc3()
+    {
+        SceneManager.LoadScene("BatalhaSamuraiOrc3");
+    }
+    public void BatalhaSamuraiSoldado3()
+    {
+        SceneManager.LoadScene("BatalhaSamuraiSoldado3");
+    }
     private void OnMouseDown()
     {
         

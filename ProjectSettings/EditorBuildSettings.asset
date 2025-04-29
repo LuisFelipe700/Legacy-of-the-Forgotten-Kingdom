@@ -44,6 +44,42 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Samurai/EscolhaArmadura.unity
     guid: 2bc71f997650b0c4180cded08ff4087f
+  - enabled: 1
+    path: Assets/Scenes/Samurai/HistoriaCacada2.unity
+    guid: 75bf42a0fcd6bcb48a1d3daeea3506ec
+  - enabled: 1
+    path: Assets/Scenes/Samurai/EscolhaCaminhoS2.unity
+    guid: 89acdd5e07e33b9418b8dee729e561cc
+  - enabled: 1
+    path: Assets/Scenes/Samurai/IrahBatalharS2.unity
+    guid: 1e26df6308663cf45bda7b180900d4ce
+  - enabled: 1
+    path: Assets/Scenes/Samurai/PROIBIDOentra2.unity
+    guid: 1baa12dad5438834d8a9ef52b28acf3d
+  - enabled: 1
+    path: Assets/Scenes/Samurai/BatalhaSamuraiSoldado2.unity
+    guid: 37e7bbfc69cb73741aa7c087528e37e0
+  - enabled: 1
+    path: Assets/Scenes/Samurai/BatalhaSamuraiOrc2.unity
+    guid: bf8c8f8127301894f8ec85bfb66d1e48
+  - enabled: 1
+    path: Assets/Scenes/Samurai/BatalhaSamuraiOrc3.unity
+    guid: 476b91740e4f4754696813608def048f
+  - enabled: 1
+    path: Assets/Scenes/Samurai/BatalhaSamuraiSoldado3.unity
+    guid: 5e62b9f2078dde04c9df30a0002597f7
+  - enabled: 1
+    path: Assets/Scenes/Samurai/EscolhaCaminhoS3.unity
+    guid: 5bfc90a7591413748b5cdf09fbb9f9fe
+  - enabled: 1
+    path: Assets/Scenes/Samurai/HistoriaCacada3.unity
+    guid: fcb503a250552c34e9ead5d31ef6878d
+  - enabled: 1
+    path: Assets/Scenes/Samurai/IrahBatalharS3.unity
+    guid: 9dac3e35ddc6bbc43b888fca74a752de
+  - enabled: 1
+    path: Assets/Scenes/Samurai/PROIBIDOentra3.unity
+    guid: c981103778a4d0946b8d447529132544
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
