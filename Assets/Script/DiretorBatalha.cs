@@ -1,61 +1,145 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DiretorBatalha : MonoBehaviour
+{ 
+[SerializeField] Player player;
+[SerializeField] Player inimigo;
+[SerializeField] TextMeshProUGUI vidaPlayer;
+[SerializeField] TextMeshProUGUI vidaInimigo;
+[SerializeField] TextMeshProUGUI nomePlayer;
+[SerializeField] TextMeshProUGUI nomeInimigo;
+[SerializeField] TextMeshProUGUI informativo;
+[SerializeField] GameObject textoTextoVitoria;
+[SerializeField] GameObject textoTextoDerrota;
+[SerializeField] Button botaoEspecial;
+[SerializeField] Button botaoAtaque;
+string turno = "Player";
+bool verificadorDeTurno = true;
+
+// Start is called once before the first execution of Update after the MonoBehaviour is created
+void Start()
 {
-    [SerializeField] Player player;
-    [SerializeField] Player inimigo;
-    [SerializeField] TextMeshProUGUI vidaPlayer;
-    [SerializeField] TextMeshProUGUI vidaInimigo;
-    [SerializeField] TextMeshProUGUI nomePlayer;
-    [SerializeField] TextMeshProUGUI nomeInimigo;
-    [SerializeField] TextMeshProUGUI informativo;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    vidaPlayer.text = player.GetVida().ToString();
+    vidaInimigo.text = inimigo.GetVida().ToString();
+    nomePlayer.text = player.GetNomePersonagem();
+    nomeInimigo.text = inimigo.GetNomePersonagem();
+    botaoEspecial.interactable = false;
+}
+
+void Update()
+{
+    AtualizaDadosTela();
+
+    if (turno == "Player" && verificadorDeTurno && player.VerificaVida())
     {
-        vidaPlayer.text = player.GetVida().ToString();
-        vidaInimigo.text = inimigo.GetVida().ToString();
-        nomePlayer.text = player.GetNomePersonagem();
-        nomeInimigo.text = inimigo.GetNomePersonagem();
+        botaoAtaque.interactable = true; 
+
+        if (player.VerificaEspecial())
+        {
+            botaoEspecial.interactable = true;
+        }
+        else
+        {
+            botaoEspecial.interactable = false;
+        }
+
+        verificadorDeTurno = false;
+    }
+    else if (turno == "Inimigo" && verificadorDeTurno && inimigo.VerificaVida())
+    {
+        StartCoroutine(AtaqueInimigo());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    VerificaVitoria();
+}
 
-    public void AtaquePlayer()
+public void AtaquePlayer()
+{
+    inimigo.LevarDano(player.Ataque());
+    StartCoroutine(AtaqueP());
+}
+
+public void AtaqueEspecial()
+{
+    inimigo.LevarDano(player.Especial());
+    StartCoroutine(AtaqueP());
+}
+
+private void AtualizaDadosTela()
+{
+    vidaPlayer.text = player.GetVida().ToString();
+    vidaInimigo.text = inimigo.GetVida().ToString();
+}
+
+public void RecebeTexto(string texto)
+{
+    StartCoroutine(ExibeTexto(texto));
+}
+
+private IEnumerator ExibeTexto(string texto)
+{
+    informativo.text += texto + "\n";
+    yield return new WaitForSeconds(5f);
+    informativo.text = "";
+}
+
+private IEnumerator AtaqueInimigo()
+{
+    verificadorDeTurno = false;
+
+    if (turno == "Inimigo")
     {
-        inimigo.LevarDano(player.Ataque());
+        botaoAtaque.interactable = false;
+        botaoEspecial.interactable = false;
         player.LevarDano(inimigo.Ataque());
-        AtualizaDadosTela();
+        yield return new WaitForSeconds(5f);
+        verificadorDeTurno = true;
+        turno = "Player";
     }
+}
 
-    public void AtaqueEspecial()
-    {
-        inimigo.LevarDano(player.Especial());
-        player.LevarDano(inimigo.Ataque());
-        AtualizaDadosTela();
-    }
+private IEnumerator AtaqueP()
+{
+    verificadorDeTurno = false;
+    botaoAtaque.interactable = false;
+    botaoEspecial.interactable = false;
 
-    private void AtualizaDadosTela()
+    if (turno == "Player")
     {
-        vidaPlayer.text = player.GetVida().ToString();
-        vidaInimigo.text = inimigo.GetVida().ToString();
+        yield return new WaitForSeconds(5f);
+        verificadorDeTurno = true;
+        turno = "Inimigo";
     }
+}
+  
+    public void VerificaVitoria()
+{
+    if (!inimigo.VerificaVida())
+    {
+        StartCoroutine(TelaVitoria());
+    }
+    else if (!player.VerificaVida())
+    {
+        player.PlaySomMorte();
+        textoTextoDerrota.SetActive(true);
+    }
+}
 
-    public void RecebeTexto(string texto)
-    {
-        StartCoroutine(ExibeTexto(texto));
-    }
+IEnumerator TelaVitoria()
+{
+    yield return new WaitForSeconds(2.0f);
+    player.PlaySomVitoria();
+    yield return new WaitForSeconds(1.0f);
+    textoTextoVitoria.SetActive(true);
+}
 
-    private IEnumerator ExibeTexto(string texto)
-    {
-        informativo.text = texto;
-        yield return new WaitForSeconds(1f);
-        //informativo.text = "";
-    }
+public void ReiniciarJogo()
+{
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+}
 }

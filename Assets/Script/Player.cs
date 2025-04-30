@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Player : MonoBehaviour
 {
@@ -11,18 +12,28 @@ public class Player : MonoBehaviour
     [SerializeField] private bool estahVivo = true;
     [SerializeField] private DiretorBatalha dB;
     [SerializeField] private Sprite spriteDerrota;
-    private Animator anim;
+    //private Animator anim;
     private SpriteRenderer spriteRenderer;
+    [SerializeField] private AudioClip somMorte;
+    [SerializeField] private AudioClip somVitoria;
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public string GetNomePersonagem()
     {
         return nomePersonagem;
+    }
+    public void PlaySomMorte()
+    {
+        
+    }
+    public void PlaySomVitoria()
+    {
+        
     }
 
     public int GetVida()
@@ -114,7 +125,10 @@ public class Player : MonoBehaviour
             return 0;
         }
     }
-
+        public int ValorEspecial()
+        {
+             return especial;
+        }
     public void LevarDano(int dano)
     {
         int danoFinal = dano - Defesa();
@@ -123,20 +137,20 @@ public class Player : MonoBehaviour
         {
             Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} consegue se defender!");
-            anim.SetTrigger("Defesa");
+            //anim.SetTrigger("Defesa");
         }
         else if (danoFinal <= 25)
         {
             Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} leva dano de {danoFinal}.");
-            anim.SetTrigger("Dano");
+            //anim.SetTrigger("Dano");
             vida -= danoFinal; //vida = vida - danoFinal;
         }
         else
         {
             Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} toma uma porrada de {danoFinal}.");
-            anim.SetTrigger("Dano");
+            //anim.SetTrigger("Dano");
             vida -= danoFinal;
         }
 
@@ -151,6 +165,7 @@ public class Player : MonoBehaviour
         {
             dB.RecebeTexto($"{nomePersonagem}, morreu!");
         }
+
 
     }
     private void DefineVida() //Verifica o valor da vida e define como morto
