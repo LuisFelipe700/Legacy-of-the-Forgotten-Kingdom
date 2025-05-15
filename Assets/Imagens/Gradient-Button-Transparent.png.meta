@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gradient-Button-Transparent_0: 968846506045722589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

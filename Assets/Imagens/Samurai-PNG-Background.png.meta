@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Samurai-PNG-Background_0: 7108222601254668956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

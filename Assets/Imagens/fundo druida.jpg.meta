@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fundo druida_0: 5394969284909276439
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

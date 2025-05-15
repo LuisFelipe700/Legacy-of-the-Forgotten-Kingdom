@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fundo bruxo_0: -4047006954972710161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fundo do Guerreiro_0: 3920679204789393828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

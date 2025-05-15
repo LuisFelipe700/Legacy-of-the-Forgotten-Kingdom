@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fundo escolhaCaminhoSoriginal_0: -1506738865379559208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

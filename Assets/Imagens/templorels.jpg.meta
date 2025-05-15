@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      templorels_0: -900383985537520206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
